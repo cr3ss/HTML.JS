@@ -65,7 +65,7 @@ $ git clone https://github.com/cr3ss/HTML.JS
 ```
 ## Developers
 
-[CR3SS] (https://linktr.ee/cr3ss)
+[CR3SS](https://linktr.ee/cr3ss)
 
 ## License
 
