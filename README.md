@@ -63,3 +63,10 @@ HTML.render("bouncy blue ball",document.getElementById("root"));
 ```bash
 $ git clone https://github.com/cr3ss/HTML.JS
 ```
+## Developers
+
+CR3SS (https://linktr.ee/cr3ss)
+
+## License
+
+  [MIT](LICENSE)
