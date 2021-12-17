@@ -61,7 +61,7 @@ HTML.render("bouncy blue ball",document.getElementById("root"));
 ## Installation
 
 ```bash
-$ git clone https://github.com/cr3ss/HTML.JS
+$ git clone https://github.com/CR3SS/HTML.JS
 ```
 ## Developers
 
