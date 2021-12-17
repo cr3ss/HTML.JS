@@ -42,7 +42,7 @@ window.HTML = class{
         delete assimilation.props.style;
         assimilation.props && Object.assign(element,assimilation.props) && style && Object.assign(element.style,style);
 
-        // console.log("element:",element);
+        // console.log("element:",assimilation);
 
         for(let i=0;i<element._created.length;i++){element._created[i].bind(element)()};
         !element._observed && element.conditionalProperties && (new this._observation(element));
@@ -235,9 +235,11 @@ window.HTML = class{
         for(let i=0;i<elementList.length;i++){
             const element = elementList[i];
             const template = this.templates[element];
+            // console.log("template:",template,element);
+            // console.log("created:",_props)
             _.merge(_props,template.props);
-            template.created && _props._created.push(template.created);
-            template.attached && _props._attached.push(template.attached);
+            template.props.created && _props._created.push(template.props.created);
+            template.props.attached && _props._attached.push(template.props.attached);
         }
 
         const assimilation = {type:_type,props:_.merge(_props,props)};
