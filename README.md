@@ -20,19 +20,16 @@ HTML.createTemplate(
     "div",
     {
         created:function(){
-            this.animate(this.style.keyFrames,this.style.keyFramesMetrics);
+            this.animate(this.keyFrames,this.keyFrameMetrics);
         },
-        style:{
-            animationDuration:"3s",
-            keyFrames:[
-                {transform: "translateY(0px)"}, 
-                {transform: "translateY(200px)"}
-            ],
-            keyFramesMetrics:{
-                duration: 1000,
-                iterations: Infinity,
-                direction: "alternate"
-            }
+        keyFrames:[
+            {transform: "translateY(0px)"}, 
+            {transform: "translateY(200px)"}
+        ],
+        keyFrameMetrics:{
+            duration: 1000,
+            iterations: Infinity,
+            direction: "alternate"
         }
     },
     "bouncy ball"
